@@ -1,0 +1,183 @@
+:root {
+    --gray: #555555;
+    --link: #16c910;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+body {
+    margin: auto;
+    width: 80%;
+}
+
+.brand-icon-content {
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+}
+
+.contact-icon-github {
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.h-10 {
+    height: 10vh;
+}
+
+.h-90 {
+    height: 90vh;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul>li {
+    font-weight: bold;
+}
+
+nav ul>li::after {
+    content: ' /';
+}
+
+nav ul>li:last-child::after {
+    content: '';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: var(--gray);
+}
+
+.font-3 {
+    font-size: 3rem;
+}
+
+.text-gray {
+    color: var(--gray);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-col-3 {
+    grid-template-columns: auto auto auto;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.h-80 {
+    height: 80vh;
+}
+
+main .col {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+main .col:first-child {
+    border-left: 1px solid black;
+}
+
+main .col .title {
+    height: 10vh;
+    padding: 10px;
+}
+
+main .col .list {
+    height: 70vh;
+}
+
+main .col .list a {
+    color: var(--link);
+}
+
+main .col .list .subtitle {
+    font-weight: normal;
+}
+
+main .col ul.list>li {
+    border-bottom: 1px solid black;
+    padding: 2vh 10px;
+}
+
+main .col ul.list>li:last-child {
+    border-bottom: none;
+}
+
+main .col ul.sub-list>li::before {
+    content: '- ';
+}
+
+main .col ul.sub-list>li {
+    margin: 10px 0;
+}
+
+.py-10 {
+    padding: 10vh 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-link {
+    color: var(--link);
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A basic HTML WebSite Project" />
+    <meta name="robots" content="index, follow" />
+    <title>Home - A basic HTML WebSite Project</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta property="og:title" content="A basic HTML WebSite Project" />
+    <meta property="og:description" content="A basic HTML WebSite Project" />
+    <meta
+      property="og:image"
+      content="https://unsplash.com/photos/girl-using-desktop-computer-in-room-CZ9AjMGKIFI"
+    />
+  </head>
+  <body>
+    <nav id="nav" class="flex items-center space-between h-10">
+      <div class="brand flex items-center gap-10">
+        <div class="brand-icon">
+          <img
+            class="brand-icon-content"
+            src="./public/brand-icon.svg"
+            alt="brand icon"
+          />
+        </div>
+        <h4 class="brand-title">your name</h4>
+      </div>
+      <ul class="links flex gap-10">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/articles.html">Articles</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section
+      id="hero"
+      class="hero flex flex-col items-center justify-center h-90"
+    >
+      <h1 class="font-3">Frontend Developer</h1>
+      <br />
+      <h3 class="text-gray">html only with proper layout, no styling</h3>
+    </section>
+    <main id="main" class="grid grid-col-3 h-100 py-10">
+      <div id="projects" class="col">
+        <h4 class="title">Projects</h4>
+        <ul class="list flex flex-col justify-center">
+          <li>HTML Only Portfolio</li>
+          <li>Calculator</li>
+          <li>Quiz App</li>
+          <li>Countdown Timer</li>
+          <li>Product Upcoming Page</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="title">Work Experience</h4>
+        <ul class="list">
+          <li>
+            <h4 class="subtitle mb-10"><b>roadmap.sh</b></h4>
+            <p class="mb-10">Solved all the frontend projects</p>
+            <a
+              href="https://github.com/lizardkingLK/roadmap-projects"
+              class="link mb-10"
+              ><b><h5>Visit my Profile</h5></b></a
+            >
+          </li>
+          <li>
+            <h4 class="subtitle mb-10"><b>OpenSource Work</b></h4>
+            <p class="mb-10">
+              Contributed to 50 opensource projects. Made my own projects with
+              200 GitHub Stars.
+            </p>
+            <a href="https://github.com/lizardkingLK" class="link mb-10"
+              ><b><h5>Visit my GitHub Profile</h5></b></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="title">Education</h4>
+        <ul class="list">
+          <li>
+            <p class="mb-20">
+              Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized
+              30 sessions.
+            </p>
+            <p class="mb-20">Courses I took:</p>
+            <ul class="sub-list">
+              <li>Object Oriented Programming</li>
+              <li>Data Structures and Algorithms</li>
+              <li>Web Engineering</li>
+              <li>Artificial Intelligence</li>
+              <li>Human Computer Interaction</li>
+              <li>Computer Graphics</li>
+              <li>Database Management Systems</li>
+              <li>Distributed Database Systems</li>
+              <li>Discreet Mathematics</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <section id="testimonials" class="py-10 h-90">
+      <h2 class="mb-20">Reviews from my Teachers</h2>
+      <div class="flex gap-20">
+        <div class="card">
+          <p class="title mb-20">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+          </p>
+          <h4 class="text-gray">Jane Doe</h4>
+          <h5 class="text-gray">Assistant Professor</h5>
+        </div>
+        <div class="card">
+          <p class="title mb-20">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+          </p>
+          <h4 class="text-gray">Jane Doe</h4>
+          <h5 class="text-gray">Assistant Professor</h5>
+        </div>
+        <div class="card">
+          <p class="title mb-20">
+            John doe was a brilliant student; always stood out with his
+            assignments.
+          </p>
+          <h4 class="text-gray">Jane Doe</h4>
+          <h5 class="text-gray">Assistant Professor</h5>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="h-10 text-center">
+      &copy; all rights reserved 2025
+    </footer>
+  </body>
+</html>
