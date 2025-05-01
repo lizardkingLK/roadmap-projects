@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A basic HTML WebSite Project" />
+    <meta name="robots" content="index, follow" />
+    <title>Articles - A basic HTML WebSite Project</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta property="og:title" content="A basic HTML WebSite Project" />
+    <meta property="og:description" content="A basic HTML WebSite Project" />
+    <meta
+      property="og:image"
+      content="https://unsplash.com/photos/girl-using-desktop-computer-in-room-CZ9AjMGKIFI"
+    />
+  </head>
+  <body>
+    <nav id="nav" class="flex items-center space-between h-10">
+      <div class="brand flex items-center gap-10">
+        <div class="brand-icon">
+          <img
+            class="brand-icon-content"
+            src="./public/brand-icon.svg"
+            alt="brand icon"
+          />
+        </div>
+        <h4 class="brand-title">your name</h4>
+      </div>
+      <ul class="links flex gap-10">
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/articles.html">Articles</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="articles" class="articles">
+      <h2 class="h-10">Articles</h2>
+      <div
+        id="articlesContent"
+        class="flex flex-col justify-center items-center h-80"
+      >
+        <h1 class="h-10">Articles Published</h1>
+        <div class="flex gap-20">
+          <div class="article">
+            <p class="mb-20">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              molestiae atque deleniti deserunt quas magni porro sapiente iste
+              itaque nihil?
+            </p>
+            <a
+              href="https://github.com/lizardkingLK/roadmap-projects"
+              class="text-link"
+              >Read More</a
+            >
+          </div>
+          <div class="article">
+            <p class="mb-20">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+              quibusdam ab eligendi praesentium, quod eos enim unde pariatur
+              velit nisi voluptatum quae facere.
+            </p>
+            <a
+              href="https://github.com/lizardkingLK/roadmap-projects"
+              class="text-link"
+              >Read More</a
+            >
+          </div>
+          <div class="article">
+            <p class="mb-20">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              eligendi mollitia totam eos esse minima excepturi molestiae ea
+              optio perspiciatis architecto debitis doloribus animi sed at
+              veniam officiis beatae, repellat unde?
+            </p>
+            <a
+              href="https://github.com/lizardkingLK/roadmap-projects"
+              class="text-link"
+              >Read More</a
+            >
+          </div>
+          <div class="article">
+            <p class="mb-20">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Molestias id soluta inventore hic! Autem consequuntur, suscipit
+              pariatur deleniti obcaecati reprehenderit et aliquam magni nulla!
+            </p>
+            <a
+              href="https://github.com/lizardkingLK/roadmap-projects"
+              class="text-link"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="h-10 text-center">
+      &copy; all rights reserved 2025
+    </footer>
+    <script>
+      const articlesContent = document.querySelector("#articlesContent");
+      articlesContent.animate(
+        [
+          { transform: "translateY(0px)", color: "black" },
+          { transform: "translateY(-100px)", color: "black" },
+        ],
+        { duration: 1000, iterations: 1, fill: "forwards" }
+      );
+    </script>
+  </body>
+</html>
